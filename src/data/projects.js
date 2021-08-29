@@ -3,7 +3,7 @@ import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
 import droneSim from '../assets/droneSim.jpg'
 import spiderBot from '../assets/spiderRobot.jpg'
-import jShelfV4 from '../assets/jShelfV4.png'
+import jShelfV4 from '../assets/jShelfV4.PNG'
 
 const PROJECTS = [
   {
