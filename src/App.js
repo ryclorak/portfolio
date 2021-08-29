@@ -21,13 +21,13 @@ class App extends Component {
       <div>
       <img src={profile} alt='profile' className='profile' />
         <h1>Hello!</h1>
-        <p>My name is Karol. I'm a dookie maker.</p>
-        <p>I like to poop daily.</p>
+        <p>My name is Karol.</p>
+        <p>I am a maker.</p>
         {
           this.state.displayBio ? (
             <div>
-              <p>I live in Hell, and I code every day.</p>
-              <p>Besides choking, I like skinning unicorns.</p>
+              <p>This is obviously very much under construction.</p>
+              <p>That counter down there doesn't even work...</p>
               <p>Smash that like button!</p>
               <div>
                 <button onClick={this.toggleDisplayBio}>like</button>
