@@ -19,11 +19,11 @@ const SOCIAL_PROFILES = [
     link: 'https://www.linkedin.com/in/karol-cyrklaff',
     image: linkedInIcon
   },
-  {
-    id: 4,
-    link: 'https://twitter.com/ephemeration',
-    image: twitterIcon // swap for github
-  }
+  // {
+  //   id: 4,
+  //   link: 'https://twitter.com/ephemeration',
+  //   image: twitterIcon // swap for github
+  // }
 ];
 
 export default SOCIAL_PROFILES;
