@@ -28,13 +28,12 @@ class App extends Component {
             <div>
               <p>This is obviously very much under construction.</p>
               <p>That counter down there doesn't even work...</p>
-              <p>Smash that like button!</p>
               <div>
-                <button onClick={this.toggleDisplayBio}>like</button>
+                <button onClick={this.toggleDisplayBio}>like (actually more like Read Less)</button>
               </div>
               <div>
-                <p>clicks</p>
                 {clicks}
+                <p>clicks</p>
               </div>
             </div>
           ) : (
