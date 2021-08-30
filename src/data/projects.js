@@ -5,8 +5,8 @@ import jShelfV4 from '../assets/jShelfV4.PNG'
 const PROJECTS = [
   {
     id: 1,
-    title: 'Drone Simulator',
-    description: 'Made using Unity3d, for a drone piloting course at ARC',
+    title: 'Programming',
+    description: 'Made Drone simulator with Unity3D for a drone piloting course at ARC',
     link: 'https://www.faa.gov/uas/commercial_operators/',
     image: droneSim
   },
