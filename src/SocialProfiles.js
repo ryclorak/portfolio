@@ -19,7 +19,7 @@ class SocialProfiles extends Component {
   render() {
     return (
       <div>
-        <h2>Connect 4!</h2>
+        <h2>Connect with me!</h2>
         <div>
         {   ///curly braces for jsx
           SOCIAL_PROFILES.map(SOCIAL_PROFILE => {   ///map SOCIAL_PROFILES array
