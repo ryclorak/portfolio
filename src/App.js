@@ -23,10 +23,10 @@ class App extends Component {
         <h1>Hello!</h1>
         <p>My name is Karol.</p>
         <p>I am a maker.</p>
+        <p>This is very much under construction.</p>
         {
           this.state.displayBio ? (
             <div>
-              <p>This is obviously very much under construction.</p>
               <p>That counter down there doesn't even work...</p>
               <div>
                 <button onClick={this.toggleDisplayBio}>like (actually more like Read Less)</button>
@@ -44,6 +44,16 @@ class App extends Component {
         }
         <hr />
         <Projects />
+        <hr />
+        {/* <div>
+          <button onClick =
+        </div> */}
+        {/*<div>
+          <h2>Skills</h2>
+          <p>I made this website using React. In addition to JavaScript, 
+              I am proficient with C, C++, Java, and related languages.
+              I enjoy programming with Arduino, and I love designing.</p>
+        </div>*/}
         <hr />
         <SocialProfiles />
       </div>
