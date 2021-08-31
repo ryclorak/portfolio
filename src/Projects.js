@@ -5,7 +5,7 @@ class Project extends Component {
   render () {
     console.log('this.props', this.props);
 
-    const { title, image, description, link } = this.props.project;
+    const { title, description, link, linkText, image } = this.props.project;
 
     return (
       <div style ={{ display: 'inline-block', width: 300, margin: 10 }}>
