@@ -8,6 +8,7 @@ const PROJECTS = [
     title: 'Programming',
     description: 'Drone simulator made in Unity3D for a drone piloting course.',
     link: 'https://www.faa.gov/uas/commercial_operators/',
+    linkText: 'FAA Part 107',
     image: droneSim
   },
   {
@@ -15,6 +16,7 @@ const PROJECTS = [
     title: 'Embedded Systems',
     description: 'I\'ve made numerous projects using Arduino and Raspberry Pi.',
     link: 'https://github.com/ryclorak/Arduino',
+    linkText: 'github',
     image: spiderBot
   },
   {
@@ -22,6 +24,7 @@ const PROJECTS = [
     title: '3D Designs/Prints',
     description: 'I enjoy 3d designing and printing! Check out my thingiverse.',
     link: 'https://www.thingiverse.com/ryclorak/designs',
+    linkText: 'thingiverse',
     image: jShelfV4
   }
 ];
