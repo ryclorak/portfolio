@@ -3,19 +3,36 @@ import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import profile from './assets/profile.jpg';
 
+class Counter extends Component {
+  state = {
+    count: 0
+  };
+  handleClick = () => {
+    this.setState((prevState, { count }) => ({
+      count : prevState.count + 1
+    }));
+  };
+  render () {
+    return (
+    <div>
+      <p>{this.state.count}</p>
+    <button onClick={this.handleClick}>like</button>
+    </div>
+    )
+  }
+}
+
 class App extends Component {
   state = { displayBio: false };
 
   toggleDisplayBio = () => {
     this.setState({ displayBio: !this.state.displayBio });
   }
-
   // rather than creating constructor, attaching state obj to this, 
   // and binding this to helper methods
 
-  render() {
 
-    var clicks = 0;
+  render() {
 
     return (
       <div>
@@ -27,13 +44,12 @@ class App extends Component {
         {
           this.state.displayBio ? (
             <div>
-              <p>That counter down there doesn't even work...</p>
               <div>
-                <button onClick={this.toggleDisplayBio}>like (actually more like Read Less)</button>
+              <p>Lalalala This is a long piece of text that is really meaningless but partly meant to test stuff and stuff soo o o o o i eiaiajdoj asoif af a f pdgopskgioewsjr asdggrer</p>
+                <button onClick={this.toggleDisplayBio}>Read less</button>
               </div>
               <div>
-                {clicks}
-                <p>clicks</p>
+                <Counter />
               </div>
             </div>
           ) : (
