@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
-import profile from './assets/profile.jpg';
+import profile from '../assets/profile.jpg';
 import Title from './Title';
+import Jokes from './Jokes';
 
 class Counter extends Component {
   state = {
@@ -94,6 +95,8 @@ quasi aliquam eligendi, placeat qui corporis!</p>
         </div>*/}
         <hr />
         <SocialProfiles />
+        <hr />
+        <Jokes />
       </div>
     )
   }
