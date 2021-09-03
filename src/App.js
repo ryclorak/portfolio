@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import profile from './assets/profile.jpg';
+import Title from './Title';
 
 class Counter extends Component {
   state = {
@@ -40,8 +41,8 @@ class App extends Component {
       <img src={profile} alt='profile' className='profile' />
         <h1>Hello!</h1>
         <p>My name is Karol.</p>
-        <p>I am a maker.</p>
-        <p>This is very much under construction.</p>
+        <Title />
+        <p>This is under construction.</p>
         {
           this.state.displayBio ? (
             <div>
