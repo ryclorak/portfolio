@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
-import profile from '../assets/profile.jpg';
 import Title from './Title';
-import Jokes from './Jokes';
+import profile from '../assets/profile.jpg';
 
 class Counter extends Component {
   state = {
@@ -36,7 +35,6 @@ class App extends Component {
 
 
   render() {
-
     return (
       <div>
       <img src={profile} alt='profile' className='profile' />
@@ -95,8 +93,6 @@ quasi aliquam eligendi, placeat qui corporis!</p>
         </div>*/}
         <hr />
         <SocialProfiles />
-        <hr />
-        <Jokes />
       </div>
     )
   }
