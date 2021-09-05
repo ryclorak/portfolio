@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = ({ children }) => {    //stateless functional component
-    // const { Component } = props;
-  
+const Header = ({ children }) => {    //stateless functional component  
   const style = {
     display: 'inline-block',
     margin: 10,
