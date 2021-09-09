@@ -32,6 +32,8 @@ class Jokes extends Component {
         <h3>Want ten new jokes?</h3>
         <button onClick={this.fetchJokes}>Click me!</button>
         {this.state.jokes.map(joke => (<Joke key={joke.id} joke={joke} />))}
+        <hr />
+        <p><small>Made by <a href="https://github.com/15Dkatz/official_joke_api">David Katz</a></small></p>
       </div>
     )
   }
