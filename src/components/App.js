@@ -74,6 +74,10 @@ quasi aliquam eligendi, placeat qui corporis!</p>
         </div>*/}
         <hr />
         <SocialProfiles />
+        <hr />
+        <div>
+          <font size="1">Made from scratch by me!</font>
+        </div>
       </div>
     )
   }
