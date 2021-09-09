@@ -35759,7 +35759,9 @@ var Jokes = /*#__PURE__*/function (_Component) {
           key: joke.id,
           joke: joke
         });
-      }));
+      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "Made by ", /*#__PURE__*/_react.default.createElement("a", {
+        href: "https://github.com/15Dkatz/official_joke_api"
+      }, "David Katz"))));
     }
   }]);
 
@@ -35948,7 +35950,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62121" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51617" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
