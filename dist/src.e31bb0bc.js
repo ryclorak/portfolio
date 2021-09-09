@@ -35148,8 +35148,8 @@ function createMemoryHistory(b) {
 ;
 },{"@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js"}],"assets/droneSim.jpg":[function(require,module,exports) {
 module.exports = "/droneSim.d1b18dda.jpg";
-},{}],"assets/spiderRobot.jpg":[function(require,module,exports) {
-module.exports = "/spiderRobot.bda8fc2a.jpg";
+},{}],"assets/autoTapperV1.jpg":[function(require,module,exports) {
+module.exports = "/autoTapperV1.f6509236.jpg";
 },{}],"assets/jShelfV4.PNG":[function(require,module,exports) {
 module.exports = "/jShelfV4.f6bb5c5d.PNG";
 },{}],"data/projects.js":[function(require,module,exports) {
@@ -35162,7 +35162,7 @@ exports.default = void 0;
 
 var _droneSim = _interopRequireDefault(require("../assets/droneSim.jpg"));
 
-var _spiderRobot = _interopRequireDefault(require("../assets/spiderRobot.jpg"));
+var _autoTapperV = _interopRequireDefault(require("../assets/autoTapperV1.jpg"));
 
 var _jShelfV = _interopRequireDefault(require("../assets/jShelfV4.PNG"));
 
@@ -35172,27 +35172,27 @@ var PROJECTS = [{
   id: 1,
   title: 'Programming',
   description: 'Drone simulator made in Unity3D for a drone piloting course.',
-  link: 'https://www.faa.gov/uas/commercial_operators/',
-  linkText: 'FAA Part 107',
+  link: 'https://aerospaceca.org/',
+  linkText: 'Local Aerospace Museum',
   image: _droneSim.default
 }, {
   id: 2,
   title: 'Embedded Systems',
-  description: 'I\'ve made numerous projects using Arduino and Raspberry Pi.',
-  link: 'https://github.com/ryclorak/Arduino',
-  linkText: 'github',
-  image: _spiderRobot.default
+  description: 'Currently, I\'m working on a little automatic phone tapper.',
+  link: 'https://github.com/ryclorak/auto-tapper',
+  linkText: 'GitHub',
+  image: _autoTapperV.default
 }, {
   id: 3,
   title: '3D Designs/Prints',
   description: 'I enjoy 3d designing and printing! Check out my thingiverse.',
   link: 'https://www.thingiverse.com/ryclorak/designs',
-  linkText: 'thingiverse',
+  linkText: 'Thingiverse',
   image: _jShelfV.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/droneSim.jpg":"assets/droneSim.jpg","../assets/spiderRobot.jpg":"assets/spiderRobot.jpg","../assets/jShelfV4.PNG":"assets/jShelfV4.PNG"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/droneSim.jpg":"assets/droneSim.jpg","../assets/autoTapperV1.jpg":"assets/autoTapperV1.jpg","../assets/jShelfV4.PNG":"assets/jShelfV4.PNG"}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35759,7 +35759,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
           key: joke.id,
           joke: joke
         });
-      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "Made by ", /*#__PURE__*/_react.default.createElement("a", {
+      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "Made with an API from ", /*#__PURE__*/_react.default.createElement("a", {
         href: "https://github.com/15Dkatz/official_joke_api"
       }, "David Katz"))));
     }
@@ -35950,7 +35950,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51617" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49223" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
