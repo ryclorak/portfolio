@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 const TITLES = [
-  'a developer',
-  'an artist',
-  'a plant lover',
   'a maker',
-  'a designer'
+  'a developer',
+  'a designer',
+  'an artist',
+  'a plant lover'
 ];
 
 class Title extends Component {
