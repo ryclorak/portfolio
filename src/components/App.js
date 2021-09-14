@@ -22,16 +22,12 @@ class App extends Component {
         <h1>Hello!</h1>
         <p>My name is Karol.</p>
         <Title />
-        <p>This is under construction.</p>
         {
           this.state.displayBio ? (
             <div>
               <div>
               <p>I strive for better living through technology. I am an aspiring robotics engineer, excited to further explore the interface between hardware and software. I have used Arduino and CAD software on a variety of projects, including a motion simulator, a campus wayfinder, an automatic phone tapper. During the first lockdown, I remotely led a team building a drone simulator using C# in Unity3D. My next learning journey involves TinyML so I can teach my projects how to learn and respond to me!</p>
                 <button onClick={this.toggleDisplayBio}>Read less</button>
-              </div>
-              <div>
-                <Counter />
               </div>
             </div>
           ) : (
@@ -52,7 +48,7 @@ class App extends Component {
               I am proficient with C, C++, Java, and related languages.
               I enjoy programming with Arduino, and I love designing.</p>
         </div>*/}
-        <hr />
+        {/* <hr /> */}
         <SocialProfiles />
         <hr />
         <div>

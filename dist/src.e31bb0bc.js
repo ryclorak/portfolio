@@ -35148,8 +35148,8 @@ function createMemoryHistory(b) {
 ;
 },{"@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js"}],"assets/droneSim.jpg":[function(require,module,exports) {
 module.exports = "/droneSim.d1b18dda.jpg";
-},{}],"assets/spiderRobot.jpg":[function(require,module,exports) {
-module.exports = "/spiderRobot.bda8fc2a.jpg";
+},{}],"assets/autoTapperV1.jpg":[function(require,module,exports) {
+module.exports = "/autoTapperV1.f6509236.jpg";
 },{}],"assets/jShelfV4.PNG":[function(require,module,exports) {
 module.exports = "/jShelfV4.f6bb5c5d.PNG";
 },{}],"data/projects.js":[function(require,module,exports) {
@@ -35162,7 +35162,7 @@ exports.default = void 0;
 
 var _droneSim = _interopRequireDefault(require("../assets/droneSim.jpg"));
 
-var _spiderRobot = _interopRequireDefault(require("../assets/spiderRobot.jpg"));
+var _autoTapperV = _interopRequireDefault(require("../assets/autoTapperV1.jpg"));
 
 var _jShelfV = _interopRequireDefault(require("../assets/jShelfV4.PNG"));
 
@@ -35172,27 +35172,27 @@ var PROJECTS = [{
   id: 1,
   title: 'Programming',
   description: 'Drone simulator made in Unity3D for a drone piloting course.',
-  link: 'https://www.faa.gov/uas/commercial_operators/',
-  linkText: 'FAA Part 107',
+  link: 'https://aerospaceca.org/',
+  linkText: 'Local Aerospace Museum',
   image: _droneSim.default
 }, {
   id: 2,
   title: 'Embedded Systems',
-  description: 'I\'ve made numerous projects using Arduino and Raspberry Pi.',
-  link: 'https://github.com/ryclorak/Arduino',
-  linkText: 'github',
-  image: _spiderRobot.default
+  description: 'Currently working on a programmable phone tapper.',
+  link: 'https://github.com/ryclorak/auto-tapper',
+  linkText: 'GitHub',
+  image: _autoTapperV.default
 }, {
   id: 3,
   title: '3D Designs/Prints',
   description: 'I enjoy 3d designing and printing! Check out my thingiverse.',
   link: 'https://www.thingiverse.com/ryclorak/designs',
-  linkText: 'thingiverse',
+  linkText: 'Thingiverse',
   image: _jShelfV.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/droneSim.jpg":"assets/droneSim.jpg","../assets/spiderRobot.jpg":"assets/spiderRobot.jpg","../assets/jShelfV4.PNG":"assets/jShelfV4.PNG"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/droneSim.jpg":"assets/droneSim.jpg","../assets/autoTapperV1.jpg":"assets/autoTapperV1.jpg","../assets/jShelfV4.PNG":"assets/jShelfV4.PNG"}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35283,7 +35283,7 @@ var SOCIAL_PROFILES = [{
 } // {
 //   id: 4,
 //   link: 'https://twitter.com/ephemeration',
-//   image: twitterIcon // swap for github
+//   image: twitterIcon // still not using yet
 // }
 ];
 var _default = SOCIAL_PROFILES;
@@ -35378,7 +35378,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var TITLES = ['a developer', 'an artist', 'a plant lover', 'a maker', 'a designer'];
+var TITLES = ['a maker', 'a developer', 'a designer', 'an artist', 'a plant lover'];
 
 var Title = /*#__PURE__*/function (_Component) {
   _inherits(Title, _Component);
@@ -35414,8 +35414,8 @@ var Title = /*#__PURE__*/function (_Component) {
           return _this.setState({
             fadeIn: false
           });
-        }, 2000);
-      }, 4000); //4 seconds
+        }, 1500);
+      }, 3000); //3 seconds
     });
 
     return _this;
@@ -35430,7 +35430,7 @@ var Title = /*#__PURE__*/function (_Component) {
         return _this2.setState({
           fadeIn: false
         });
-      }, 2000);
+      }, 1500);
       this.animateTitles();
     }
   }, {
@@ -35529,9 +35529,9 @@ var Counter = /*#__PURE__*/function (_Component) {
   _createClass(Counter, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, this.state.count), /*#__PURE__*/_react.default.createElement("button", {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.handleClick
-      }, "like"));
+      }, "like"), /*#__PURE__*/_react.default.createElement("p", null, this.state.count));
     }
   }]);
 
@@ -35583,6 +35583,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+<<<<<<< HEAD
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
@@ -35595,6 +35596,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var App = /*#__PURE__*/function (_Component) {
   _inherits(App, _Component);
 
+=======
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var App = /*#__PURE__*/function (_Component) {
+  _inherits(App, _Component);
+
+>>>>>>> main
   var _super = _createSuper(App);
 
   function App() {
@@ -35630,11 +35645,19 @@ var App = /*#__PURE__*/function (_Component) {
         src: _profile.default,
         alt: "profile",
         className: "profile"
+<<<<<<< HEAD
       }), /*#__PURE__*/_react.default.createElement("h1", null, "Hello!"), /*#__PURE__*/_react.default.createElement("p", null, "My name is Karol."), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "This is under construction."), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "I strive for better living through technology. I am an aspiring robotics engineer, excited to further explore the interface between hardware and software. I have used Arduino and CAD software on a variety of projects, including a motion simulator, a campus wayfinder, an automatic phone tapper. During the first lockdown, I remotely led a team building a drone simulator using C# in Unity3D. My next learning journey involves TinyML so I can teach my projects how to learn and respond to me!"), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleDisplayBio
       }, "Read less")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Counter.default, null))) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleDisplayBio
       }, "Read more")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("font", {
+=======
+      }), /*#__PURE__*/_react.default.createElement("h1", null, "Hello!"), /*#__PURE__*/_react.default.createElement("p", null, "My name is Karol."), /*#__PURE__*/_react.default.createElement(_Title.default, null), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "I strive for better living through technology. I am an aspiring robotics engineer, excited to further explore the interface between hardware and software. I have used Arduino and CAD software on a variety of projects, including a motion simulator, a campus wayfinder, an automatic phone tapper. During the first lockdown, I remotely led a team building a drone simulator using C# in Unity3D. My next learning journey involves TinyML so I can teach my projects how to learn and respond to me!"), /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.toggleDisplayBio
+      }, "Read less"))) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.toggleDisplayBio
+      }, "Read more")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("font", {
+>>>>>>> main
         size: "1"
       }, "Made from scratch by ", /*#__PURE__*/_react.default.createElement("a", {
         href: "https://github.com/ryclorak/portfolio"
@@ -35656,6 +35679,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
+
+var _Counter = _interopRequireDefault(require("./Counter"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -35696,6 +35723,17 @@ var Joke = function Joke(_ref) {
   }, setup, " ", /*#__PURE__*/_react.default.createElement("em", null, delivery));
 };
 
+var OtherJoke = function OtherJoke(_ref2) {
+  var _ref2$otherJoke = _ref2.otherJoke,
+      setup = _ref2$otherJoke.setup,
+      delivery = _ref2$otherJoke.delivery;
+  return /*#__PURE__*/_react.default.createElement("p", {
+    style: {
+      margin: 20
+    }
+  }, setup, " ", /*#__PURE__*/_react.default.createElement("em", null, delivery));
+};
+
 var Jokes = /*#__PURE__*/function (_Component) {
   _inherits(Jokes, _Component);
 
@@ -35714,7 +35752,8 @@ var Jokes = /*#__PURE__*/function (_Component) {
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       joke: {},
-      jokes: []
+      jokes: [],
+      otherJoke: {}
     });
 
     _defineProperty(_assertThisInitialized(_this), "fetchJokes", function () {
@@ -35729,12 +35768,25 @@ var Jokes = /*#__PURE__*/function (_Component) {
       });
     });
 
+    _defineProperty(_assertThisInitialized(_this), "fetchOtherJokes", function () {
+      fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart').then(function (response) {
+        return response.json();
+      }).then(function (json) {
+        return _this.setState({
+          otherJoke: json
+        });
+      }).catch(function (error) {
+        return alert(error.message);
+      });
+    });
+
     return _this;
   }
 
   _createClass(Jokes, [{
     key: "componentDidMount",
-    value: // for asynchronous stuff, to not tie rendering component with slow requests
+    value: // https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart
+    // for asynchronous stuff, to not tie rendering component with slow requests
     function componentDidMount() {
       var _this2 = this;
 
@@ -35748,7 +35800,8 @@ var Jokes = /*#__PURE__*/function (_Component) {
       }).catch(function (error) {
         return alert(error.message);
       });
-    }
+    } // https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart&amount=10
+
   }, {
     key: "render",
     value: function render() {
@@ -35761,9 +35814,17 @@ var Jokes = /*#__PURE__*/function (_Component) {
           key: joke.id,
           joke: joke
         });
+<<<<<<< HEAD
       }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "Made by ", /*#__PURE__*/_react.default.createElement("a", {
         href: "https://github.com/15Dkatz/official_joke_api"
       }, "David Katz"))));
+=======
+      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "Those other jokes not working?"), /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.fetchOtherJokes
+      }, "joke time"), /*#__PURE__*/_react.default.createElement(OtherJoke, {
+        otherJoke: this.state.otherJoke
+      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Counter.default, null));
+>>>>>>> main
     }
   }]);
 
@@ -35772,7 +35833,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
 
 var _default = Jokes;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/Header.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Counter":"components/Counter.js"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35952,7 +36013,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "60597" + '/');
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60947" + '/');
+>>>>>>> main
 
   ws.onmessage = function (event) {
     checkedAssets = {};

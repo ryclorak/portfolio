@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5 {
 .title-fade-out {
   opacity: 0;
   animation-name: fade-out;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 .title-fade-in {
   opacity: 100;
   animation-name: fade-in;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade-out {

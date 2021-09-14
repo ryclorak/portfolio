@@ -1,31 +1,31 @@
-import droneSim from '../assets/droneSim.jpg'
-import spiderBot from '../assets/spiderRobot.jpg'
-import jShelfV4 from '../assets/jShelfV4.PNG'
+import proj1 from '../assets/droneSim.jpg'
+import proj2 from '../assets/autoTapperV1.jpg'
+import proj3 from '../assets/jShelfV4.PNG'
 
 const PROJECTS = [
   {
     id: 1,
     title: 'Programming',
     description: 'Drone simulator made in Unity3D for a drone piloting course.',
-    link: 'https://www.faa.gov/uas/commercial_operators/',
-    linkText: 'FAA Part 107',
-    image: droneSim
+    link: 'https://aerospaceca.org/',
+    linkText: 'Local Aerospace Museum',
+    image: proj1
   },
   {
     id: 2,
     title: 'Embedded Systems',
-    description: 'I\'ve made numerous projects using Arduino and Raspberry Pi.',
-    link: 'https://github.com/ryclorak/Arduino',
-    linkText: 'github',
-    image: spiderBot
+    description: 'Currently working on a programmable phone tapper.',
+    link: 'https://github.com/ryclorak/auto-tapper',
+    linkText: 'GitHub',
+    image: proj2
   },
   {
     id: 3,
     title: '3D Designs/Prints',
     description: 'I enjoy 3d designing and printing! Check out my thingiverse.',
     link: 'https://www.thingiverse.com/ryclorak/designs',
-    linkText: 'thingiverse',
-    image: jShelfV4
+    linkText: 'Thingiverse',
+    image: proj3
   }
 ];
 

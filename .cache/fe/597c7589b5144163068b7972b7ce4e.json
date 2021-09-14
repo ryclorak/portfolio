@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"assets/droneSim.jpg","dependencies":[{"name":"C:\\bowshet\\projects\\programming\\websites\\mine\\portfolio\\package.json","includedInParent":true,"mtime":1631578023046}],"generated":{"js":"module.exports = \"/6a85fd1e9ddd2496fc6f26cad1b18dda.jpg\";"},"sourceMaps":null,"error":null,"hash":"7bb7d3ff1b1311fa8d8195dd964b53f1","cacheData":{"env":{}}}
+=======
+{"id":"assets/droneSim.jpg","dependencies":[{"name":"C:\\bowshet\\projects\\programming\\websites\\mine\\portfolio\\package.json","includedInParent":true,"mtime":1631580512471}],"generated":{"js":"module.exports = \"/6a85fd1e9ddd2496fc6f26cad1b18dda.jpg\";"},"sourceMaps":null,"error":null,"hash":"7bb7d3ff1b1311fa8d8195dd964b53f1","cacheData":{"env":{}}}
+>>>>>>> main
