@@ -22,7 +22,7 @@ const SOCIAL_PROFILES = [
   // {
   //   id: 4,
   //   link: 'https://twitter.com/ephemeration',
-  //   image: twitterIcon // swap for github
+  //   image: twitterIcon // still not using yet
   // }
 ];
 

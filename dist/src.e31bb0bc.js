@@ -35178,7 +35178,7 @@ var PROJECTS = [{
 }, {
   id: 2,
   title: 'Embedded Systems',
-  description: 'Currently, I\'m working on a little automatic phone tapper.',
+  description: 'Currently working on a programmable phone tapper.',
   link: 'https://github.com/ryclorak/auto-tapper',
   linkText: 'GitHub',
   image: _autoTapperV.default
@@ -35283,7 +35283,7 @@ var SOCIAL_PROFILES = [{
 } // {
 //   id: 4,
 //   link: 'https://twitter.com/ephemeration',
-//   image: twitterIcon // swap for github
+//   image: twitterIcon // still not using yet
 // }
 ];
 var _default = SOCIAL_PROFILES;
@@ -35378,7 +35378,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var TITLES = ['a developer', 'an artist', 'a plant lover', 'a maker', 'a designer'];
+var TITLES = ['a maker', 'a developer', 'a designer', 'an artist', 'a plant lover'];
 
 var Title = /*#__PURE__*/function (_Component) {
   _inherits(Title, _Component);
@@ -35414,8 +35414,8 @@ var Title = /*#__PURE__*/function (_Component) {
           return _this.setState({
             fadeIn: false
           });
-        }, 2000);
-      }, 4000); //4 seconds
+        }, 1500);
+      }, 3000); //3 seconds
     });
 
     return _this;
@@ -35430,7 +35430,7 @@ var Title = /*#__PURE__*/function (_Component) {
         return _this2.setState({
           fadeIn: false
         });
-      }, 2000);
+      }, 1500);
       this.animateTitles();
     }
   }, {
@@ -35529,9 +35529,9 @@ var Counter = /*#__PURE__*/function (_Component) {
   _createClass(Counter, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, this.state.count), /*#__PURE__*/_react.default.createElement("button", {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.handleClick
-      }, "like"));
+      }, "like"), /*#__PURE__*/_react.default.createElement("p", null, this.state.count));
     }
   }]);
 
@@ -35630,13 +35630,15 @@ var App = /*#__PURE__*/function (_Component) {
         src: _profile.default,
         alt: "profile",
         className: "profile"
-      }), /*#__PURE__*/_react.default.createElement("h1", null, "Hello!"), /*#__PURE__*/_react.default.createElement("p", null, "My name is Karol."), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "This is under construction."), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero magni deleniti quod quam consequuntur! Commodi minima excepturi repudiandae velit hic maxime doloremque. Quaerat provident commodi consectetur veniam similique ad earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam quasi aliquam eligendi, placeat qui corporis!"), /*#__PURE__*/_react.default.createElement("button", {
+      }), /*#__PURE__*/_react.default.createElement("h1", null, "Hello!"), /*#__PURE__*/_react.default.createElement("p", null, "My name is Karol."), /*#__PURE__*/_react.default.createElement(_Title.default, null), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "I strive for better living through technology. I am an aspiring robotics engineer, excited to further explore the interface between hardware and software. I have used Arduino and CAD software on a variety of projects, including a motion simulator, a campus wayfinder, an automatic phone tapper. During the first lockdown, I remotely led a team building a drone simulator using C# in Unity3D. My next learning journey involves TinyML so I can teach my projects how to learn and respond to me!"), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleDisplayBio
-      }, "Read less")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Counter.default, null))) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+      }, "Read less"))) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleDisplayBio
-      }, "Read more")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("font", {
+      }, "Read more")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("font", {
         size: "1"
-      }, "Made from scratch by me!")));
+      }, "Made from scratch by ", /*#__PURE__*/_react.default.createElement("a", {
+        href: "https://github.com/ryclorak/portfolio"
+      }, "me!"))));
     }
   }]);
 
@@ -35654,6 +35656,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
+
+var _Counter = _interopRequireDefault(require("./Counter"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -35694,6 +35700,17 @@ var Joke = function Joke(_ref) {
   }, setup, " ", /*#__PURE__*/_react.default.createElement("em", null, punchline));
 };
 
+var OtherJoke = function OtherJoke(_ref2) {
+  var _ref2$otherJoke = _ref2.otherJoke,
+      setup = _ref2$otherJoke.setup,
+      delivery = _ref2$otherJoke.delivery;
+  return /*#__PURE__*/_react.default.createElement("p", {
+    style: {
+      margin: 20
+    }
+  }, setup, " ", /*#__PURE__*/_react.default.createElement("em", null, delivery));
+};
+
 var Jokes = /*#__PURE__*/function (_Component) {
   _inherits(Jokes, _Component);
 
@@ -35712,7 +35729,8 @@ var Jokes = /*#__PURE__*/function (_Component) {
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       joke: {},
-      jokes: []
+      jokes: [],
+      otherJoke: {}
     });
 
     _defineProperty(_assertThisInitialized(_this), "fetchJokes", function () {
@@ -35727,12 +35745,25 @@ var Jokes = /*#__PURE__*/function (_Component) {
       });
     });
 
+    _defineProperty(_assertThisInitialized(_this), "fetchOtherJokes", function () {
+      fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart').then(function (response) {
+        return response.json();
+      }).then(function (json) {
+        return _this.setState({
+          otherJoke: json
+        });
+      }).catch(function (error) {
+        return alert(error.message);
+      });
+    });
+
     return _this;
   }
 
   _createClass(Jokes, [{
     key: "componentDidMount",
-    value: // for asynchronous stuff, to not tie rendering component with slow requests
+    value: // https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart
+    // for asynchronous stuff, to not tie rendering component with slow requests
     function componentDidMount() {
       var _this2 = this;
 
@@ -35746,7 +35777,8 @@ var Jokes = /*#__PURE__*/function (_Component) {
       }).catch(function (error) {
         return alert(error.message);
       });
-    }
+    } // https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart&amount=10
+
   }, {
     key: "render",
     value: function render() {
@@ -35759,9 +35791,11 @@ var Jokes = /*#__PURE__*/function (_Component) {
           key: joke.id,
           joke: joke
         });
-      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "Made with an API from ", /*#__PURE__*/_react.default.createElement("a", {
-        href: "https://github.com/15Dkatz/official_joke_api"
-      }, "David Katz"))));
+      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, "Those other jokes not working?"), /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.fetchOtherJokes
+      }, "joke time"), /*#__PURE__*/_react.default.createElement(OtherJoke, {
+        otherJoke: this.state.otherJoke
+      }), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Counter.default, null));
     }
   }]);
 
@@ -35770,7 +35804,7 @@ var Jokes = /*#__PURE__*/function (_Component) {
 
 var _default = Jokes;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/Header.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Counter":"components/Counter.js"}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35950,7 +35984,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60389" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60947" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

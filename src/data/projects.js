@@ -14,7 +14,7 @@ const PROJECTS = [
   {
     id: 2,
     title: 'Embedded Systems',
-    description: 'Currently, I\'m working on a little automatic phone tapper.',
+    description: 'Currently working on a programmable phone tapper.',
     link: 'https://github.com/ryclorak/auto-tapper',
     linkText: 'GitHub',
     image: proj2

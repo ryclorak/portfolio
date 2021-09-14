@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
 const TITLES = [
-  'a developer',
-  'an artist',
-  'a plant lover',
   'a maker',
-  'a designer'
+  'a developer',
+  'a designer',
+  'an artist',
+  'a plant lover'
 ];
 
 class Title extends Component {
   state = { titleIndex: 0, fadeIn: true };
 
   componentDidMount() {
-    this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
+    this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 1500);
 
     this.animateTitles();
   }
@@ -27,8 +27,8 @@ class Title extends Component {
 
       this.setState({ titleIndex, fadeIn: true });
 
-      this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
-    }, 4000);    //4 seconds
+      this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 1500);
+    }, 3000);    //3 seconds
   }
 
   render() {
