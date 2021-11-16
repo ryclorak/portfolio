@@ -11,7 +11,7 @@ ReactDOM.render(
   <BrowserRouter history={createBrowserHistory()}>
     <Switch>
       <Route exact path='/' render={() => <Header><App /></Header>} />
-      <Route path='/jokes' render={() => <Header><Jokes /></Header>} />
+      <Route path='/funny' render={() => <Header><Jokes /></Header>} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Counter from './Counter';
+import Notes from './Notes';
 
 const Joke = ({ joke: { setup, punchline } }) => (
   <p style={{ margin: 20 }}>{setup} <em>{punchline}</em></p>
@@ -48,11 +49,14 @@ class Jokes extends Component {
         <button onClick={this.fetchJokes}>Click me!</button>
         {this.state.jokes.map(joke => (<Joke key={joke.id} joke={joke} />))}
         <hr />
-        <br />
         <h3>Those other jokes not working?</h3>
         <button onClick={this.fetchOtherJokes}>joke time</button>
         <OtherJoke otherJoke={this.state.otherJoke} />
         <hr />
+        <h3>Want to write notes to yourself?</h3>
+        <Notes />
+        <hr />
+        <h3>Smash that like button!</h3>
         <Counter />
       </div>
     )

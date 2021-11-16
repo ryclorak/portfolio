@@ -12,7 +12,7 @@ const Header = ({ children }) => {    //stateless functional component
     <div>
       <div>
         <h3 style={style}><Link to='/'>Home</Link></h3>
-        <h3 style={style}><Link to='/jokes'>Jokes</Link></h3>
+        <h3 style={style}><Link to='/funny'>Funny</Link></h3>
       </div>
       {children}
     </div>

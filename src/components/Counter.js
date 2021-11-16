@@ -12,7 +12,6 @@ class Counter extends Component {
   render () {
     return (
     <div>
-      <br/>
       <button onClick={this.handleClick}>like</button>
       <p>{this.state.count}</p>
     </div>
