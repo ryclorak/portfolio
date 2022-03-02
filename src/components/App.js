@@ -26,7 +26,7 @@ class App extends Component {
           this.state.displayBio ? (
             <div>
               <div>
-              <p>I strive for better living through technology. I am an aspiring robotics engineer, excited to further explore the interface between hardware and software. I have used Arduino and CAD software on a variety of projects, including a motion simulator, a campus wayfinder, an automatic phone tapper. During the first lockdown, I remotely led a team building a drone simulator using C# in Unity3D. My next learning journey involves TinyML so I can teach my projects how to learn and respond to me!</p>
+              <p>I strive for better living through technology. I am an aspiring robotics engineer, excited to further explore the interface between hardware and software. I have used Arduino and CAD software on a variety of projects, including a motion simulator, a campus wayfinder, an automatic phone tapper. During the first lockdown, I remotely led a team building a drone simulator using C# in Unity3D. I am honing my designing, prototyping, and testing skills with software, embedded systems, and so much 3d printing!</p>
                 <button onClick={this.toggleDisplayBio}>Read less</button>
               </div>
             </div>
