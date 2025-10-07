@@ -1,11 +1,11 @@
 # Dependencies
-/node_modules/
+node_modules/
 
 # Build output
-/build/
-/dist/
-/.cache/
-/.vite/
+build/
+dist/
+.cache/
+.vite/
 
 # Logs
 npm-debug.log*
@@ -26,11 +26,11 @@ Thumbs.db
 *.swp
 
 # Testing / Coverage
-/coverage/
+coverage/
 *.lcov
 
 # Optional: lock files (uncomment if using a single package manager)
-/package-lock.json
+package-lock.json
 # /yarn.lock
 # /pnpm-lock.yaml
 
@@ -39,7 +39,7 @@ Thumbs.db
 .vercel/
 
 # Misc build cache
-/.parcel-cache/
+.parcel-cache/
 .eslintcache
 .cache-loader/
 npm-cache/
