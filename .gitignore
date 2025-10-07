@@ -1,23 +1,45 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies
+/node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Build output
+/build/
+/dist/
+/.cache/
+/.vite/
 
-# testing
-/coverage
-
-# production
-# /build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Local environment variables
+.env
+.env.*.local
+!.env.example
+
+# Editor & OS cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Testing / Coverage
+/coverage/
+*.lcov
+
+# Optional: lock files (uncomment if using a single package manager)
+/package-lock.json
+# /yarn.lock
+# /pnpm-lock.yaml
+
+# Netlify or deployment artifacts
+.netlify/
+.vercel/
+
+# Misc build cache
+/.parcel-cache/
+.eslintcache
+.cache-loader/
+npm-cache/
