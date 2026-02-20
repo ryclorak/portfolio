@@ -1,0 +1,52 @@
+@font-face {
+  font-family: FiraSans;
+  src: local('Fira Sans'), local('FiraSans');
+}
+
+body {
+  background-color: #F7F7FA;
+  text-align: center;
+  font-size: 18px;
+  padding: 2.5%;
+  font-family: 'FiraSans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.profile {
+  width: 180px;
+  height: 240px;
+  border-radius: 100px;
+}
+
+.title-fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 1.5s;
+}
+
+.title-fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-out {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
