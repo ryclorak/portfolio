@@ -1,4 +1,4 @@
-'use server'
+'use server';
 import Link from 'next/link'
 import supabaseAdmin from '../../lib/supabaseAdmin'
 import PhotoGridClient from './PhotoGridClient'
